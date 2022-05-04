@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+#wrapper {
+  min-height: 100vh;
+  position: relative;
+  width: 78%;
+  margin: auto;
+}
+
+#main {
+  padding-bottom: 60px
+}
+
+ /* header */
+.header {
+  width: 78%;
+  margin: auto;
+  padding: 35px 0;
+  text-align: center;
+}
+
+.header h1 a {
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color:black;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+}
+
+.header h1 a:hover {
+  color: #0080c3;
+}
+
+.auth-container {
+  float: right;
+}
+
+.auth-container a {
+  font-size: 14px;
+  text-decoration: none;
+  color:black;
+}
+.auth-container span {
+  font-size: 14px;
+  text-decoration: none;
+  color:black;
+}
+
+.auth-container #logout:hover {
+  color: #0080c3;
+  cursor: pointer;
+}
+
+.auth-container a:hover {
+  color: #0080c3;
+}
+
+#nickname {
+  cursor: pointer;
+}
+
+ /* navbar */
+.navbar {
+  width: 78%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar ul li a:hover {
+  color: #0080c3;
+}
+
+.article-section-container {
+  text-align: center;
+}
+
+.home-container {
+  text-align: center;
+}
+
+.article {
+  margin: 15px;
+}
+
+.comment-container {
+  margin-top: 20px;
+}
+
+.comment {
+  margin: 15px;
+  border: 1px solid;
+  border-color: blue;
+}
+
+.reply-container {
+  margin: 15px;
+}
+
+.reply {
+  border: 1px solid;
+  border-color: red
+}
+
+
+ /* login */
+.login-container {
+   margin-top:40px;
+ }
+
+.login-container h2{
+  text-align: center;
+}
+
+.login-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35vh;
+  background-color: #fff;
+}
+
+.input {
+  background-color: #fff;
+}
+
+.form-container {
+  width: 27vw;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input {
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  border-radius:4px; 
+  color: #202124;
+  border: 1px solid #dadce0;
+  padding: 13px 15px;
+  transition: .15s;
+  font-size:16px;
+}
+
+input:focus,
+.input-box.active .input {
+  outline: none;
+  border: 2px solid #1a73e8;
+}
+
+.input-label {
+  position: absolute;
+  color: #80868b;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: calc(100% 0 (2*8px));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  left: 8px;
+  top: 15px;
+  padding: 0 8px;
+  transition: .15s;
+  pointer-events:none;
+  line-height: 18px;
+
+}
+
+.input-box.active .input-label,
+.input:focus + .input-label,
+.input:active + .input-label,
+.input:valid + .input-label {
+  color: #1a73e8;
+  top: -6px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  white-space: normal;
+  letter-spacing: .25px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  line-height: 20px;
+  min-width: 88px;
+  transition: .25s;
+  display: inline-block;
+}
+
+.btn:focus{
+  outline: none;
+}
+
+.btn-primary{
+  background-color: #1a73e8;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 1px 1px 0 rgba(66,133,244, .8),
+               0 1px 3px 1px rgba(66,133,244, .5);
+  background-color: #287ae6;
+}
+
+.button-box{
+  text-align: right;
+}
+
+ /* Sign up */
+ .signup-container {
+  margin-top:40px;
+}
+
+.signup-container h2{
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.signup-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45vh;
+  background-color: #fff;
+}
+
+ /* footer */
+footer {
+  width: 100%;
+  height: 60px;
+  bottom: 0px;
+  position: absolute;;
+  margin: 0 auto;
+}
+
+.footer-content {
+  text-align: center;
+  border-top: .5px solid #dde6f2;
+  padding-top: 20px;
+}
+
+.footer-content p {
+  font-size: 12px;
+  word-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.footer-content span {
+  opacity: .4;
+  font-weight: 200;
+}
+
+.regular {
+  font-weight: 400;
+}
